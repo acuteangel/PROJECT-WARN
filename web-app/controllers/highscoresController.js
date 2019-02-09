@@ -1,37 +1,23 @@
-const db = require("../models");
+var db = require("../models");
 
-// Defining methods for the booksController
-module.exports = {
-  findAll: function(req, res) {
-    db.leaderboard
-      .find(req.query)
-      .sort({ date: 1 })
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  },
-  // findById: function(req, res) {
-  //   db.leaderboard
-  //     .findById(req.params.id)
-  //     .then(dbModel => res.json(dbModel))
-  //     .catch(err => res.status(422).json(err));
-  // },
-  // create: function(req, res) {
-  //   db.leaderboard
-  //     .create(req.body)
-  //     .then(dbModel => res.json(dbModel))
-  //     .catch(err => res.status(422).json(err));
-  // },
-  // update: function(req, res) {
-  //   db.leaderboard
-  //     .findOneAndUpdate({ _id: req.params.id }, req.body)
-  //     .then(dbModel => res.json(dbModel))
-  //     .catch(err => res.status(422).json(err));
-  // },
-  // remove: function(req, res) {
-  //   db.leaderboard
-  //     .findById({ _id: req.params.id })
-  //     .then(dbModel => dbModel.remove())
-  //     .then(dbModel => res.json(dbModel))
-  //     .catch(err => res.status(422).json(err));
-  // }
+exports.createScores = function (req, res) {
+  db.Scores.findAll({
+    where: {
+      scores: req.body.scores, DESC
+    }
+  }).then(function () {
+    db.Scores.create({
+      name: req.body.name,
+      score: req.body.score,
+      date: req.body.date,
+
+    }).then(function () {
+      info.save();
+    }).catch(function(err) {
+      res.json(err);
+    }).finally(function () {
+      db.sequelize.close();
+    });
+
+  })
 };
