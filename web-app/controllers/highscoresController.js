@@ -5,17 +5,17 @@ exports.createScores = function (req, res) {
     where: {
       scores: req.body.scores, DESC
     }
-  }).then(function () {
+  }).then(() => {
     db.Scores.create({
       name: req.body.name,
       score: req.body.score,
       date: req.body.date,
 
-    }).then(function () {
+    }).then(() => {
       info.save();
-    }).catch(function(err) {
+    }).catch(err => {
       res.json(err);
-    }).finally(function () {
+    }).finally(() => {
       db.sequelize.close();
     });
 

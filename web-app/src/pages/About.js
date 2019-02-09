@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import { Col, Row, Container } from "../components/Grid";
 
-class about extends Component {
+class About extends Component {
 
   render() {
     return (
@@ -21,4 +21,4 @@ class about extends Component {
   }
 }
 
-export default about;
+export default About;
