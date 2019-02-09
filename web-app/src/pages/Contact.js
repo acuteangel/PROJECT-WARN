@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ContactCard from "./components/ContactCard";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import contacts from "./contacts.json";
+import ContactCard from "../components/ContactCard";
+import Wrapper from "../components/Wrapper";
+import Title from "../components/Title";
+import contacts from "../contacts.json";
 
 class Contact extends Component {
   state = {

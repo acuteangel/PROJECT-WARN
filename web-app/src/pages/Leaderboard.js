@@ -9,6 +9,7 @@ class leaderboard extends Component {
     boards: [],
     name: "",
     score: "",
+    date: ""
   };
 
   componentDidMount() {
@@ -18,36 +19,10 @@ class leaderboard extends Component {
   loadScores = () => {
     API.getScores()
       .then(res =>
-        this.setState({ boards: res.data, name: "", score: ""})
+        this.setState({ boards: res.data, name: "", score: "", date: ""})
       )
       .catch(err => console.log(err));
   };
-
-//   deleteBook = id => {
-//     API.deleteBook(id)
-//       .then(res => this.loadBooks())
-//       .catch(err => console.log(err));
-//   };
-
-//   handleInputChange = event => {
-//     const { name, value } = event.target;
-//     this.setState({
-//       [name]: value
-//     });
-//   };
-
-//   handleFormSubmit = event => {
-//     event.preventDefault();
-//     if (this.state.title && this.state.author) {
-//       API.saveBook({
-//         title: this.state.title,
-//         author: this.state.author,
-//         synopsis: this.state.synopsis
-//       })
-//         .then(res => this.loadBooks())
-//         .catch(err => console.log(err));
-//     }
-//   };
 
   render() {
     return (
@@ -62,7 +37,7 @@ class leaderboard extends Component {
                 {this.state.boards.map(board => (
                   <ListItem key={board._id}>
                       <strong>
-                        {board.name} || {board.score}
+                        {board.name} || {board.score} || {board.date}
                       </strong>
                   </ListItem>
                 ))}

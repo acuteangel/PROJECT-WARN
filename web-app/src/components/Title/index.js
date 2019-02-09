@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Title(props) {
+function Title({ children }) {
   return <h1 className="title">{ children }</h1>;
 }
 
