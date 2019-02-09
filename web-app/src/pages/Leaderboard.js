@@ -28,7 +28,7 @@ class leaderboard extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6 sm-12">
+          <Col size="md-12">
             <Jumbotron>
               <h1>High Scores!</h1>
             </Jumbotron>

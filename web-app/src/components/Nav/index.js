@@ -12,11 +12,10 @@ function Nav() {
       <a className="navbar-brand" href="/contacts">
         Contacts
       </a>
-      <a className="navbar-right">
-      <h3> W.A.R.N. Web App</h3>
-      </a>
-      
-    
+      <h3 className="navbar-right">
+      W.A.R.N. Web App
+      </h3>
+     
     </nav>
   );
 }
