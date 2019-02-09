@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-//import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-//import { Input, TextArea, FormBtn } from "../components/Form";
 
-class Books extends Component {
+class leaderboard extends Component {
   state = {
-    board: [],
+    boards: [],
     name: "",
     score: "",
   };
@@ -21,7 +18,7 @@ class Books extends Component {
   loadScores = () => {
     API.getScores()
       .then(res =>
-        this.setState({ board: res.data, name: "", score: ""})
+        this.setState({ boards: res.data, name: "", score: ""})
       )
       .catch(err => console.log(err));
   };
@@ -60,9 +57,9 @@ class Books extends Component {
             <Jumbotron>
               <h1>High Scores!</h1>
             </Jumbotron>
-            {this.state.board.length ? (
+            {this.state.boards.length ? (
               <List>
-                {this.state.board.map(board => (
+                {this.state.boards.map(board => (
                   <ListItem key={board._id}>
                       <strong>
                         {board.name} || {board.score}

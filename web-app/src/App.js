@@ -1,9 +1,10 @@
 import React from "react";
-import leaderboard from "./pages/leaderboard";
+import Leaderboard from "./pages/Leaderboard";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import about from "./pages/about";
+import About from "./pages/About";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
     <div>
       <Nav />
       <Switch>
-        <Route exact path="/" component={leaderboard}/>
-        <Route exact path="/about" component={about}/>
-        <Route exact path="/contact" component={contact} />
+        <Route exact path="/" component={Leaderboard}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/contacts" component={Contact} />
         <Route component={NoMatch} />
       </Switch>
     </div>
