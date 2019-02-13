@@ -8,7 +8,7 @@ if (process.env.JAWSDB_URL) {
 		host: 'localhost',
 		user: 'root',
 		password: '',
-		database: 'WARN_leaderboard'
+		database: 'unity_test2'
 	});
 };
 
