@@ -1,10 +1,15 @@
 var db = require("../models");
 
-
-exports.postScores = function (req, res) {
+exports.getScores = function (req, res) {
+  db.Scores.findAll({
+    where: {
+      scores: req.body.scores, DESC
+    }
+  
+  }).then(() => {
     db.Scores.create({
       player: req.body.player,
-      score: req.body.score,  
+      score: req.body.score,
 
     }).then(() => {
       info.save();
@@ -14,7 +19,6 @@ exports.postScores = function (req, res) {
       db.sequelize.close();
     });
 
-    // db.Scores.create(req.body).then(function(dbPost) {
-    //   res.json(dbPost);
-    // });
+  })
+
 };

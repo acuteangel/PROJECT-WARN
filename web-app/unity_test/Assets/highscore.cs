@@ -4,7 +4,7 @@ using System.Collections;
 
 public class highscore : MonoBehaviour
 {
-    private string highscore_url = "http://localhost:3000/api/post";
+    private string highscore_url = "http://localhost:3001/api/post";
     public string player;
     public string score;
 
@@ -15,7 +15,7 @@ public class highscore : MonoBehaviour
 
         WWWForm form = new WWWForm();
 
-        form.AddField( "name", player );
+        form.AddField( "player", player );
 
         form.AddField( "score", score );
 
