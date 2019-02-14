@@ -2,12 +2,13 @@ const express = require("express");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+var db = require("./models");
 
-app.get('/', function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});
+// app.get('/', function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "X-Requested-With");
+//   next();
+// });
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

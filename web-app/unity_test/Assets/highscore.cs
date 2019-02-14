@@ -4,7 +4,7 @@ using System.Collections;
 
 public class highscore : MonoBehaviour
 {
-    private string highscore_url = "http://localhost:3001/api/post";
+    private string highscore_url = "http://localhost:3001/api/leaderboard/post";
     public string player;
     public string score;
 

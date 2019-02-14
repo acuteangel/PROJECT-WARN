@@ -19,19 +19,24 @@ class leaderboard extends Component {
   loadScores = () => {
     API.getScores()
       .then(res =>
-        this.setState({ boards: res.data, name: "", score: "" })//, date: ""})
+        // this.setState({ boards: res.data, name: "", score: "" })//, date: ""})
+        console.log("Hey ya'll")
       )
       .catch(err => console.log(err));
   };
 
-  // postsScores = () => {
-  //   API.postScores()
-  //     .then(res =>
-  //       this.setState({ boards: res.data, name: "", score: "" })//, date: ""})
-  //     )
-  //     .catch(err => console.log(err));
-  // };
-
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.player && this.state.score) {
+      API.postScores({
+        player: this.state.player,
+        score: this.state.score,
+      })
+        .then(res => this.loadScores())
+        .catch(err => console.log(err));
+    }
+  };
+  
   render() {
     return (
       <Container fluid>

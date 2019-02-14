@@ -1,6 +1,5 @@
 var db = require("../models");
 
-
 exports.postScores = function (req, res) {
     db.Scores.create({
       player: req.body.player,

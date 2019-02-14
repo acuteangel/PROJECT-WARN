@@ -3,8 +3,8 @@ const scoresController = require("../../controllers/highscoresController");
 const postController = require("../../controllers/posthighscoresController");
 
 router.route("/")
-  .get(scoresController.findAll)
-  .post(scoresController.create);
+  .get(scoresController.getScores)
+  // .post(scoresController.create);
 
 router.route("/post")
 //.post(postController.create);
