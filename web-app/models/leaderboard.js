@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-  var Scores = sequelize.define("scores", {
-    name: {
+  var Scores = sequelize.define("highscores", {
+    player: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -8,13 +8,14 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     score: {
-      type: DataTypes.INTEGER,
-      defaultValue: false
+      type: DataTypes.STRING,
+      allowNull: false,
+ //     defaultValue: false
     },
-    date: {
-      createdAt: Sequelize.DATE,
-      defaultValue: false
-    }
+    // date: {
+    //   createdAt: Sequelize.DATE,
+    //   defaultValue: false
+    // }
   });
   return Scores;
 };

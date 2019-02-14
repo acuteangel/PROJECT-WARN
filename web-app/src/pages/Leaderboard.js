@@ -9,7 +9,7 @@ class leaderboard extends Component {
     boards: [],
     name: "",
     score: "",
-    date: ""
+   // date: ""
   };
 
   componentDidMount() {
@@ -19,10 +19,18 @@ class leaderboard extends Component {
   loadScores = () => {
     API.getScores()
       .then(res =>
-        this.setState({ boards: res.data, name: "", score: "", date: ""})
+        this.setState({ boards: res.data, name: "", score: "" })//, date: ""})
       )
       .catch(err => console.log(err));
   };
+
+  // postsScores = () => {
+  //   API.postScores()
+  //     .then(res =>
+  //       this.setState({ boards: res.data, name: "", score: "" })//, date: ""})
+  //     )
+  //     .catch(err => console.log(err));
+  // };
 
   render() {
     return (
@@ -37,7 +45,7 @@ class leaderboard extends Component {
                 {this.state.boards.map(board => (
                   <ListItem key={board._id}>
                       <strong>
-                        {board.name} || {board.score} || {board.date}
+                        {board.name} || {board.score} || 
                       </strong>
                   </ListItem>
                 ))}

@@ -4,39 +4,31 @@ using System.Collections;
 
 public class highscore : MonoBehaviour
 {
-    string highscore_url = "http://localhost:3000";
-    string playName = "Player1";
-    int score = -1;
+    private string highscore_url = "http://localhost:3000/api/post";
+    public string player;
+    public string score;
 
-    // Use this for initialization
-    IEnumerator Start()
-    {
-        // Create a form object for sending high score data to the server
+   public void Post() {
+        StartCoroutine(Upload());
+    }
+    IEnumerator Upload() {
+
         WWWForm form = new WWWForm();
 
-        // Assuming the perl script manages high scores for different games
-        form.AddField( "game", "MyGameName" );
+        form.AddField( "name", player );
 
-        // The name of the player submitting the scores
-        form.AddField( "playerName", playName );
-
-        // The score
         form.AddField( "score", score );
 
-        // Create a download object
-        var download = UnityWebRequest.Post(highscore_url, form);
+        UnityWebRequest www = UnityWebRequest.Post(highscore_url, form);
+        yield return www.SendWebRequest();
 
-        // Wait until the download is done
-        yield return download.SendWebRequest();
-
-        if (download.isNetworkError || download.isHttpError)
+        if (www.isNetworkError || www.isHttpError)
         {
-            print( "Error downloading: " + download.error );
+            print(www.error);
         }
         else
         {
-            // show the highscores
-            Debug.Log(download.downloadHandler.text);
+            Debug.Log(www.downloadHandler.text);
         }
     }
 }

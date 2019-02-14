@@ -2,14 +2,14 @@
     "development": {
       "username": "root",
       "password": "",
-      "database": "unity_test2",
+      "database": "unity_test3",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
       "password": null,
-      "database": "unity_test2",
+      "database": "unity_test3",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
