@@ -3,19 +3,14 @@ module.exports = function(sequelize, DataTypes) {
     player: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [1, 20]
-      }
+     validate: {
+       len: [1, 20]
+     }
     },
     score: {
       type: DataTypes.STRING,
       allowNull: false,
- //     defaultValue: false
     },
-    // date: {
-    //   createdAt: Sequelize.DATE,
-    //   defaultValue: false
-    // }
   });
   return Scores;
 };

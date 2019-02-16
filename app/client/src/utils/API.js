@@ -9,7 +9,7 @@ export default {
   // },
 
   postScores: function(Scores) {
-    return axios.post("/api/leaderboard/post", Scores)
+    return axios.post("/api/leaderboard", Scores)
   }
 
 };

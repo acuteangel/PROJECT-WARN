@@ -7,7 +7,7 @@ exports.getScores = function (req, res) {
     }
   
   }).then(() => {
-    db.Scores.create({
+    db.Scores.update({
       player: req.body.player,
       score: req.body.score,
 
