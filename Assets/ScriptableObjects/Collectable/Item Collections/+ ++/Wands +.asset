@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Wands +
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 414b16779b8808149a6e6039f3955152, type: 2}
+  - {fileID: 11400000, guid: 3bd449df106026842a9720b5648c5047, type: 2}
+  - {fileID: 11400000, guid: 20941e33b51e8ac4b9c1f9e58d2f5054, type: 2}
+  - {fileID: 11400000, guid: dff1f17c79539c341aaaf6ef9e63c108, type: 2}
+  - {fileID: 11400000, guid: ba529a20f02821f4ab3626b2dc9d728b, type: 2}
