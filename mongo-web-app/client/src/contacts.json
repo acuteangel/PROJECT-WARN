@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "William Collins",
+    "image": "",
+    "about": "https://www.linkedin.com/in/william-collins-29039416b/",
+    "location": "A Pineapple Under the Sea"
+  },
+  {
+    "id": 2,
+    "name": "Angel Aquas",
+    "image": "",
+    "about": "https://www.linkedin.com/in/angelaquas/",
+    "location": "A Giant Anchor"
+  },
+  {
+    "id": 3,
+    "name": "Rajiv Jagirdar",
+    "image": "",
+    "about": "https://www.linkedin.com/in/rajiv-jagirdar-8a122549/",
+    "location": "An Easter Island Head"
+  },
+  {
+    "id": 4,
+    "name": "Nick Antonyan",
+    "image": "",
+    "about": "https://www.linkedin.com/in/nicholas-antonyan-380496123/",
+    "location": "A Secret Laboratory"
+  }
+]
