@@ -1,6 +1,6 @@
 import React from "react";
-import Leaderboard from "./pages/Leaderboard";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Leaderboard from "./pages/Leaderboard";
 import About from "./pages/About";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";

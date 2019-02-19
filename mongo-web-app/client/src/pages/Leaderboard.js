@@ -4,12 +4,18 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 
-class leaderboard extends Component {
+//import Moment from "react-moment"
+//import { TimeDate } from "../components/React-Moment/react-moment";
+
+
+
+
+class Leaderboard extends Component {
   state = {
-    boards: [],
-    name: "",
+    scores: [],
+    player: "",
     score: "",
-   // date: ""
+    date: ""
   };
 
   componentDidMount() {
@@ -19,38 +25,37 @@ class leaderboard extends Component {
   loadScores = () => {
     API.getScores()
       .then(res =>
-        // this.setState({ boards: res.data, name: "", score: "" })//, date: ""})
-        console.log("Hey ya'll")
+       this.setState({ scores: res.data, player: "", score: "", date: "" })
+       // console.log("why no load")
       )
       .catch(err => console.log(err));
+     // window.location.reload();
   };
 
-  handleFormSubmit = event => {
-    event.preventDefault();
-    if (this.state.player && this.state.score) {
-      API.postScores({
-        player: this.state.player,
-        score: this.state.score,
-      })
-        .then(res => this.loadScores())
-        .catch(err => console.log(err));
-    }
-  };
-  
   render() {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-12">
+          <Col size="sm-12">
             <Jumbotron>
-              <h1>High Scores!</h1>
+              <h1>High Scores Leaderboard!!!</h1>
+              
+              <h3>Player || Score</h3>
+              
             </Jumbotron>
-            {this.state.boards.length ? (
+            </Col>
+            </Row>
+            <Row>
+            <Col size="sm-12">
+            {this.state.scores.length ? (
               <List>
-                {this.state.boards.map(board => (
-                  <ListItem key={board._id}>
+                
+                
+
+                {this.state.scores.map(board => (
+                  <ListItem key={board.score}>
                       <strong>
-                        {board.name} || {board.score} || 
+                        {board.player} || {board.score}  {/*<TimeDate>{board.date}</TimeDate> {board.date} */}
                       </strong>
                   </ListItem>
                 ))}
@@ -59,10 +64,11 @@ class leaderboard extends Component {
               <h3>No Results to Display</h3>
             )}
           </Col>
-        </Row>
+          </Row>
       </Container>
+
     );
   }
 }
 
-export default leaderboard;
+export default Leaderboard;

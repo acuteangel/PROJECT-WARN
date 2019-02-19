@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 function Nav() {
   return (
@@ -12,10 +13,9 @@ function Nav() {
       <a className="navbar-brand" href="/contacts">
         Contacts
       </a>
-      <h3 className="navbar-right">
+      <h3 >
       W.A.R.N. Web App
       </h3>
-     
     </nav>
   );
 }
