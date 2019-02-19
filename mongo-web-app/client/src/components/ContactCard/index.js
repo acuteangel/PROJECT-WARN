@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function ContactCard(props) {
@@ -13,7 +14,11 @@ function ContactCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>about:</strong> {props.about}
+            <Link to={props.about}>
+                      <strong>
+                        Check out my LinkedIn
+                      </strong>
+                    </Link>
           </li>
         </ul>
       </div>

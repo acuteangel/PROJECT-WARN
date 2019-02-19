@@ -3,7 +3,7 @@ import "./style.css";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="/">
         Leaderboard
       </a>
@@ -13,7 +13,7 @@ function Nav() {
       <a className="navbar-brand" href="/contacts">
         Contacts
       </a>
-      <h3 >
+      <h3 className="warn" >
       W.A.R.N. Web App
       </h3>
     </nav>
