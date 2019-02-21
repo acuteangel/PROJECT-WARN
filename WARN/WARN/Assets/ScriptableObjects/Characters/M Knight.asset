@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c613f4209fe5943b92be5b659b4df9, type: 3}
+  m_Name: M Knight
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 1920970120279562, guid: 63e91eff3b08e1943b57091d42ca8309,
+    type: 3}
+  name: 
+  abilities:
+  - {fileID: 11400000, guid: 2b27cbcee40de944dbc7a165d720d0bf, type: 2}
+  - {fileID: 11400000, guid: 744038e9e81ac8842add9e6d72722df8, type: 2}
+  primaryWeapon: {fileID: 11400000, guid: 4bb980457d8bf8340b304f7d32b9c581, type: 2}
+  secondaryWeapon: {fileID: 11400000, guid: 143a49898ef55ea49bf707b0fb21ef85, type: 2}
+  itemSet:
+  - {fileID: 11400000, guid: 37f15ca790205ea4e8dddd6194713bb0, type: 2}
+  - {fileID: 11400000, guid: a52c1d1194fe0684392b9b85413f9400, type: 2}
+  - {fileID: 11400000, guid: 11855875442096547bbfb3228eb3d2e8, type: 2}
+  - {fileID: 11400000, guid: c2318187ced2d2c40b04e674af46aacd, type: 2}
+  - {fileID: 11400000, guid: 374d0ab988fa9f347b676b96afd46a46, type: 2}
+  - {fileID: 11400000, guid: e46390c94471d1e49bcec00aa257ec4f, type: 2}
+  equip: {fileID: 6255019825834484011, guid: 3568024c6619a5d45afaef7bdd29d7bc, type: 3}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Arrows Gold
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 2d4002d0533de76439d3118162b39f10, type: 2}
+  - {fileID: 11400000, guid: bbada3a3047097d4bad2f855163973bf, type: 2}
+  - {fileID: 11400000, guid: 61731e0af83c6b24b919e5dd55915a84, type: 2}
+  - {fileID: 11400000, guid: 915eacbdc9fbee847bd8f6d54d43ba65, type: 2}
+  - {fileID: 11400000, guid: 1e2019e119d886043ad1b68eb7681cb1, type: 2}
+  - {fileID: 11400000, guid: 22b06e77b62dfaa48baf1d85c2fe7012, type: 2}
+  - {fileID: 11400000, guid: 10d2fd047ee849844bb75bd7e4fb8649, type: 2}
+  - {fileID: 11400000, guid: 22570a91d78879a4c85af5013e3967b1, type: 2}
+  - {fileID: 11400000, guid: 18194f274c746c146bad39edec358684, type: 2}
+  - {fileID: 11400000, guid: c655fde9dd149c44796264ee393d8496, type: 2}
+  - {fileID: 11400000, guid: 9e773a1307aefcf489f7ebf6578aeb17, type: 2}
+  - {fileID: 11400000, guid: 88e834d4f3f5e5a438bab708cb88cb43, type: 2}
+  - {fileID: 11400000, guid: 7a86b2e90d2591443aead383baab5fe6, type: 2}
+  - {fileID: 11400000, guid: b4d755425a5becc4792437564aa491fd, type: 2}
+  - {fileID: 11400000, guid: 4ebaf66dfe6cf7241b7297127e47bf4d, type: 2}
