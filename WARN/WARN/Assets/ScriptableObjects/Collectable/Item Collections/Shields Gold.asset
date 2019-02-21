@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Shields Gold
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 143a49898ef55ea49bf707b0fb21ef85, type: 2}
+  - {fileID: 11400000, guid: ec3f8cc8f68c95f4db09c5298349aed0, type: 2}
+  - {fileID: 11400000, guid: 81fbc467d0408fc44ac5cc64838f7ef5, type: 2}
+  - {fileID: 11400000, guid: 81fbc467d0408fc44ac5cc64838f7ef5, type: 2}
+  - {fileID: 11400000, guid: 81fbc467d0408fc44ac5cc64838f7ef5, type: 2}
+  - {fileID: 11400000, guid: 8e6c64a8e10138b4a99f602dd0a0b672, type: 2}
+  - {fileID: 11400000, guid: 0e18e58a4e82ded4a9590fe356c78738, type: 2}
+  - {fileID: 11400000, guid: 70a4234d5e0cf2548b65380343f6fc65, type: 2}
+  - {fileID: 11400000, guid: 70a4234d5e0cf2548b65380343f6fc65, type: 2}
+  - {fileID: 11400000, guid: 70a4234d5e0cf2548b65380343f6fc65, type: 2}
+  - {fileID: 11400000, guid: 01a025c117ea12d4fbd98ac2202387fb, type: 2}
+  - {fileID: 11400000, guid: 44ad486c5184f9d4dbf44fa187e4f69c, type: 2}
+  - {fileID: 11400000, guid: 835f0f01fe2da7e4ebf5326f2a32b03a, type: 2}
+  - {fileID: 11400000, guid: 835f0f01fe2da7e4ebf5326f2a32b03a, type: 2}
+  - {fileID: 11400000, guid: 835f0f01fe2da7e4ebf5326f2a32b03a, type: 2}

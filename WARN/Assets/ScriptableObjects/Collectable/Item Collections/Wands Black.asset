@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Wands Black
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 8dc40e18a95e67b4b8a15559a47bf27c, type: 2}
+  - {fileID: 11400000, guid: 0515ffc8f1f690043961419d3f7f6bbb, type: 2}
+  - {fileID: 11400000, guid: f633b618ccbb0cf478f181ba53149833, type: 2}
+  - {fileID: 11400000, guid: b6bfe3f5380c3664e9a9b5b75baadcf0, type: 2}
+  - {fileID: 11400000, guid: 55b7a73c665121f40928217cc979e1a0, type: 2}
+  - {fileID: 11400000, guid: 414b16779b8808149a6e6039f3955152, type: 2}
+  - {fileID: 11400000, guid: 3bd449df106026842a9720b5648c5047, type: 2}
+  - {fileID: 11400000, guid: dff1f17c79539c341aaaf6ef9e63c108, type: 2}
+  - {fileID: 11400000, guid: ba529a20f02821f4ab3626b2dc9d728b, type: 2}
+  - {fileID: 11400000, guid: 20941e33b51e8ac4b9c1f9e58d2f5054, type: 2}
+  - {fileID: 11400000, guid: a084071c072cdbc478a3b7dcdd5e8504, type: 2}
+  - {fileID: 11400000, guid: 6bd6ebc514c2b9d4fa8d0aba39e0c12a, type: 2}
+  - {fileID: 11400000, guid: d1d45d7b19d78d749ba1d90ae7f8a39b, type: 2}
+  - {fileID: 11400000, guid: 55bab7e4aba4b0d47b21471a230eee70, type: 2}
+  - {fileID: 11400000, guid: 85a1c2e9817386540b5a19e0c27998f1, type: 2}

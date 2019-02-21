@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Animated Wall Fountain Basin Red
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: c5821d39dd3875e4bab74a6caa81ff9a, type: 3}
+  - {fileID: 21300000, guid: 684ac1a2250178946a7e58a837703d00, type: 3}
+  - {fileID: 21300000, guid: a4d773a1c85da12489c2f193ce2a34c0, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_TileColliderType: 0

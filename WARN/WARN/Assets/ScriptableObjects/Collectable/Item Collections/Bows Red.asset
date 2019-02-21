@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Bows Red
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 86aafa6670f1b2e458e6d257237911ab, type: 2}
+  - {fileID: 11400000, guid: 91590f0488379b948ae2850ea54f35f8, type: 2}
+  - {fileID: 11400000, guid: 8698d428a64827a4295c0d63ef61d564, type: 2}
+  - {fileID: 11400000, guid: 1b69a887a4ab87948b1e3a537dc7cbaa, type: 2}
+  - {fileID: 11400000, guid: 8cd74d2929752f845bc3352a1e69230b, type: 2}
+  - {fileID: 11400000, guid: f6e542e612cb4d849b3f6cf421cefe5b, type: 2}
+  - {fileID: 11400000, guid: bdb12941ba928f5418d5549b8ad3617d, type: 2}
+  - {fileID: 11400000, guid: 42e7adbdc15bbd1488431783ecdbb6ee, type: 2}
+  - {fileID: 11400000, guid: d4b8fa3cbc996b64ab7e7727da34d489, type: 2}
+  - {fileID: 11400000, guid: 45c1ed63c03cd524786ffa98f38e9321, type: 2}
+  - {fileID: 11400000, guid: 0ea961fb199a16949aee686227465ddc, type: 2}
+  - {fileID: 11400000, guid: 716e0f9b28c91d34e926e0f8acb34efe, type: 2}
+  - {fileID: 11400000, guid: f1dba2eddca3a0b4bb5ac9c380e0daab, type: 2}
+  - {fileID: 11400000, guid: be1d6127fbe77e0429673f617cfef676, type: 2}
+  - {fileID: 11400000, guid: 7b151ef61fea03c4abe7873354c2f6c4, type: 2}

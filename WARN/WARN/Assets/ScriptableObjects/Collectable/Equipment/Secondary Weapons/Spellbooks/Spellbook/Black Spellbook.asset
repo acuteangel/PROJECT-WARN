@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f5e88ac32d85640ad24bfd1941d0c6, type: 3}
+  m_Name: Black Spellbook
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: db691479ec9e02d4a81561f3752b3d63, type: 3}
+  aName: Black Spellbook
+  armorModifier: 0
+  damageModifier: 5
+  healthModifier: 0
+  manaModifier: 15
+  slot: 2
