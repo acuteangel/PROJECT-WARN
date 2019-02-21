@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Necklaces Red
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 9f9e0c534d1b3b646a4b7cdf2f54bd26, type: 2}
+  - {fileID: 11400000, guid: 27c60112a60838040be4eda999ca47a9, type: 2}
+  - {fileID: 11400000, guid: aba9e3a52791e534aaae984542d494f0, type: 2}
+  - {fileID: 11400000, guid: d4bcc8f673f685f49b501ee5f5a29f8b, type: 2}
+  - {fileID: 11400000, guid: ae37a40af62aa514980ee3dc04aa97c1, type: 2}
+  - {fileID: 11400000, guid: 913342c7220aea94ead2b2a651912a5f, type: 2}
+  - {fileID: 11400000, guid: 7fca3cfeab037d74aa38e67d931b9a8f, type: 2}
+  - {fileID: 11400000, guid: 3e9a6081b86f88d4b91666e0af48e166, type: 2}
+  - {fileID: 11400000, guid: 19dad50af21f25d41b5d6c6360c645c5, type: 2}
+  - {fileID: 11400000, guid: 144bde3feb3343c4b8a6d4d1b11b5339, type: 2}
+  - {fileID: 11400000, guid: 2057f9935a9ab6e41bbdd3c5e5f7fe42, type: 2}
+  - {fileID: 11400000, guid: 94337a587cbbb014fa2936f064986a00, type: 2}
+  - {fileID: 11400000, guid: 6fd3ff333f77375499c18333d565c4ec, type: 2}
+  - {fileID: 11400000, guid: 5351e592f2577a7429b1eaa3a7f96bea, type: 2}
+  - {fileID: 11400000, guid: 53c5d67525fe68e41972e02af188df15, type: 2}

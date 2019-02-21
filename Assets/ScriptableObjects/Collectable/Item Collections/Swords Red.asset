@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Swords Red
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: 4bb980457d8bf8340b304f7d32b9c581, type: 2}
+  - {fileID: 11400000, guid: a758f75d103f05b4697e8252084e1f7f, type: 2}
+  - {fileID: 11400000, guid: e60bd22a355965842b6555114a32cbc6, type: 2}
+  - {fileID: 11400000, guid: ab8bdf698b8150e4a92a13e175839a95, type: 2}
+  - {fileID: 11400000, guid: 8007e8c0ba70cbe48a9e71b017a887cf, type: 2}
+  - {fileID: 11400000, guid: d2d3759211e139e4698014d55fd245ca, type: 2}
+  - {fileID: 11400000, guid: dae52425869aa1a4f8605ca2f5817aaf, type: 2}
+  - {fileID: 11400000, guid: 0257d343827b4e545a20cadf3dcc0fc7, type: 2}
+  - {fileID: 11400000, guid: 2e35c9c046e288143aa33e4e2e878d78, type: 2}
+  - {fileID: 11400000, guid: 52abe10e00253de41a61fb42eaa700dd, type: 2}
+  - {fileID: 11400000, guid: 6c302096e976aa140a6abc5d5718f5a6, type: 2}
+  - {fileID: 11400000, guid: 40170afd033b1e64eab255904723ed1b, type: 2}
+  - {fileID: 11400000, guid: 6568c4b137ba05a4186b66495fe711fd, type: 2}
+  - {fileID: 11400000, guid: dcf6e43124f38fb42a3b1c0cd07dfb39, type: 2}
+  - {fileID: 11400000, guid: 75791051638af744086f3cbe644e766b, type: 2}

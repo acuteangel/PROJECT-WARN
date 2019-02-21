@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Rings Black
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: b097fc6e388042241bcc692d48d3a3a3, type: 2}
+  - {fileID: 11400000, guid: efbb07f9065e76045813455d73029e4a, type: 2}
+  - {fileID: 11400000, guid: 36c33f3bea5800741822239eec85adf0, type: 2}
+  - {fileID: 11400000, guid: 172e1b1b516ecf74cb6bb3517f22c617, type: 2}
+  - {fileID: 11400000, guid: 8de18b407f8860749b411e7e242abb76, type: 2}
+  - {fileID: 11400000, guid: 140cd98eb1e7c7d43b651a7102aaefcd, type: 2}
+  - {fileID: 11400000, guid: f9da39e13d17a8a489dc82c63e8226db, type: 2}
+  - {fileID: 11400000, guid: 97408bde42109c042bfc8d4af42ebf1a, type: 2}
+  - {fileID: 11400000, guid: 9e5c4e926b0928b44bc079446c83ff7f, type: 2}
+  - {fileID: 11400000, guid: 5bf7be2e13221c147907e22b9c790662, type: 2}
+  - {fileID: 11400000, guid: 144c18c9f2a4d7142989990682ef5497, type: 2}
+  - {fileID: 11400000, guid: 088d6b7a6b0fee743a69ad9ff9203ad0, type: 2}
+  - {fileID: 11400000, guid: a6f5f677e9452b343bf3e29a168976cd, type: 2}
+  - {fileID: 11400000, guid: b1558ef6f6022724fb71843c99608a22, type: 2}
+  - {fileID: 11400000, guid: 3e44d2b09ab39204cb64158518d3a5c3, type: 2}

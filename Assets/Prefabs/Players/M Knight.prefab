@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 61624796753350976}
   - component: {fileID: 212841340437238724}
   - component: {fileID: 95842155965366944}
-  - component: {fileID: 5764614632913219503}
+  - component: {fileID: 164987347}
+  - component: {fileID: 2481066822869104289}
+  - component: {fileID: 5511067895498527988}
   m_Layer: 8
   m_Name: M Knight
   m_TagString: Player
@@ -69,10 +71,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.375}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.2857143}
     oldSize: {x: 1, y: 1.75}
     newSize: {x: 1, y: 1.75}
     adaptiveTilingThreshold: 0.5
@@ -149,7 +151,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5764614632913219503
+--- !u!114 &164987347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,11 +160,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 1920970120279562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e13d93dd240187d459bfb0f2b06c64e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 84dd7096d4f47a4468243000c683c70e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0.1
+  sprite: {fileID: 21300000, guid: a0fd0be21bae5ea45b1ed2d29341efce, type: 3}
   blockingLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
+--- !u!114 &2481066822869104289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920970120279562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85942e8bdd968ed4b8d04f224734c0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  ability: {fileID: 11400000, guid: f4bec12bc041f27458dfba02c63475c4, type: 2}
+  boxCollider: {fileID: 0}
   restartLevelDelay: 1
+--- !u!114 &5511067895498527988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920970120279562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583109a1a080ebf4786323158fdac888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage:
+    baseValue: 100
+  armor:
+    baseValue: 0
+  maxHealth:
+    baseValue: 1000
+  maxMana:
+    baseValue: 200
+  buffs: []
+  currency:
+    baseValue: 0

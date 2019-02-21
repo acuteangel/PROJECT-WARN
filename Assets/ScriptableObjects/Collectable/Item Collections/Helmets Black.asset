@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7b92c6b6c28f4989017cdc099f01c, type: 3}
+  m_Name: Helmets Black
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 11400000, guid: a4f652930f2f35640a6823e0acda5e83, type: 2}
+  - {fileID: 11400000, guid: 7873e997917dba94e84823d0abe22912, type: 2}
+  - {fileID: 11400000, guid: 0ab05b58726a28b4fb22eaec35576a29, type: 2}
+  - {fileID: 11400000, guid: 3d30ae252ece24244993bc9222b9edcb, type: 2}
+  - {fileID: 11400000, guid: 89632d3451cc74045baaaf981755a473, type: 2}
+  - {fileID: 11400000, guid: e6ce392db2671fe47aec8c86c6d2b14d, type: 2}
+  - {fileID: 11400000, guid: 4299273f9d1e8f44f96d41b2f43da0e9, type: 2}
+  - {fileID: 11400000, guid: 87bf78962fdb8ad459b61fa48d1d45aa, type: 2}
+  - {fileID: 11400000, guid: 65e79f33b5406d348b20f496d8845eba, type: 2}
+  - {fileID: 11400000, guid: f4fa711353d028647be95597fa04a218, type: 2}
