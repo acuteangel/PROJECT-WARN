@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
 
     
     public float turnDelay = 0.1f;
-    public int level = 1;
-    public static GameManager instance = null;
 
+    [HideInInspector]public int level = 1;
+    [HideInInspector]public static GameManager instance = null;
     [HideInInspector] public bool isPaused = false;
     [HideInInspector] public bool playersTurn = true;
     [HideInInspector] public bool playerTargeting = false;
@@ -48,16 +48,14 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         abilities = new Queue<Ability>();
-
-        int index = PlayerPrefs.GetInt("CharacterSelected");
-        
+    
     }
 
     //Initializes the game for each level.
     public void InitGame()
     {
         level++;
-        SaveData.instance.LoadCharacter();        
+        CanvasListener.instance.level.text = level.ToString();
         //Assign enemies to a new List of Enemy objects.
         enemies = new List<Enemy>();
     }
@@ -98,6 +96,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         enabled = false;
+        Destroy(CanvasListener.instance.gameObject);
         SceneManager.LoadScene(2);
     }
 

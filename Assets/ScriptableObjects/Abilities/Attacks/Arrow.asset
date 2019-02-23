@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aName: Arrow
   trigger: Arrow
+  cost: 0
   rotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
   caster: {fileID: 0}
   target: {fileID: 0}
   rotates: 1
   fromCaster: 1
-  damage: 1
+  damage: 100
   range: 4

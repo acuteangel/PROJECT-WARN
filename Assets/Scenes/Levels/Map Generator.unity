@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316492623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -350,8 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnDelay: 0.1
-  playerWealth: 0
-  level: 1
+  level: 0
   isPaused: 0
   playersTurn: 1
   playerTargeting: 0
@@ -365,7 +364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441714365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.375, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -382,6 +381,7 @@ GameObject:
   - component: {fileID: 849853432}
   - component: {fileID: 849853431}
   - component: {fileID: 849853430}
+  - component: {fileID: 849853433}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -453,6 +453,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &849853433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849853429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83188dd06d4042d458e8bd59722eac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1920970120279562, guid: 63e91eff3b08e1943b57091d42ca8309, type: 3}
 --- !u!1001 &1325021115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -464,6 +477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: entry001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2543435479953310387, guid: 9dfd9dffe6580cc479d23d9d3409fa28,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3612155526788002815, guid: 9dfd9dffe6580cc479d23d9d3409fa28,
         type: 3}
@@ -2653,6 +2671,11 @@ PrefabInstance:
     - target: {fileID: 1919231575541203744, guid: 9dfd9dffe6580cc479d23d9d3409fa28,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829324382162870259, guid: 9dfd9dffe6580cc479d23d9d3409fa28,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

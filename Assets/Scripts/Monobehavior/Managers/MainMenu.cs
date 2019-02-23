@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
-
     public GameObject charactersPanel;
+    public Transform characterBox;
     public GameObject mainPanel;
     public GameObject characterList;
     public Texture2D cursorTexture;
@@ -14,32 +16,44 @@ public class MainMenu : MonoBehaviour
     public Vector2 hotSpot = Vector2.zero;
 
 
-    private void Awake()
+   
+
+   void Start()
     {
         OnMouseEnter();
-
-    }
-
-    private void Start()
-    {
         charactersPanel.SetActive(false);
         characterList.SetActive(false);
         mainPanel.SetActive(true);
+
+        
     }
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && charactersPanel == true)
+        if (Input.GetButtonDown("Cancel") && charactersPanel == true)
         {
-            SceneManager.LoadScene("Main Menu");
+            charactersPanel.SetActive(false);
+            mainPanel.SetActive(true);
+            characterList.SetActive(false);
+            FindObjectOfType<EventSystem>().SetSelectedGameObject(mainPanel.GetComponentInChildren<Button>().gameObject);
         }
+
     }
+
+    public void characterTransform()
+    {
+        characterList.transform.parent = characterBox;
+    }
+
+
     public void CharSelect()
     {
         mainPanel.SetActive(false);
         charactersPanel.SetActive(true);
+        characterTransform();
         characterList.SetActive(true);
+
         
     }
 

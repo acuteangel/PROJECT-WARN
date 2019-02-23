@@ -162,15 +162,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42fd1bcf47aec5f4a86b4fd981d1ebc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0.1
   blockingLayer:
     serializedVersion: 2
     m_Bits: 256
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 3c1e9b0e57422cb4fa5e757b5cd16741, type: 2}
   boxCollider: {fileID: 0}
   playerDamage: 5
-  abilityWindup: {fileID: 0}
-  hp: 3
+  abilityWindup: {fileID: 11400000, guid: 194ed2c2da552904eaa3e655d8297629, type: 2}
 --- !u!114 &4019985867284864433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089e6c41fb548b8488759b1d65d6652b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
+  currentMana: 0
   damage:
     baseValue: 20
   armor:

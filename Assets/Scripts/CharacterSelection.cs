@@ -6,11 +6,11 @@ public class CharacterSelection : MonoBehaviour
 {
     private GameObject[] characterList;
 
+    public bool delete = false;
     private int index;
-    private void Start()
+    private void Start()        
     {
         index = PlayerPrefs.GetInt("CharacterSelected");
-        Debug.Log(index);
 
         characterList = new GameObject[transform.childCount];
 
@@ -22,9 +22,11 @@ public class CharacterSelection : MonoBehaviour
 
 
         //toggle renderer
-        foreach (GameObject go in characterList)
+        for (int i = 0; i < characterList.Length; i++)
         {   
-            go.SetActive(false);
+            characterList[i].SetActive(false);
+            if (delete && i != index)
+                Destroy(characterList[i]);
         }
 
 

@@ -33,10 +33,10 @@ public class TargetingSystem : MonoBehaviour
     {    
         if (GameManager.instance.playerTargeting)
         {            
-            horizontal = (int)Input.GetAxisRaw("Horizontal");
-            vertical = (int)Input.GetAxisRaw("Vertical");
-            if (horizontal != 0)
+                        
+            if ((int) Input.GetAxisRaw("Horizontal") != 0)
             {
+                horizontal = (int)Input.GetAxisRaw("Horizontal");
                 vertical = 0;
                 horizontal = horizontal / Mathf.Abs(horizontal);
                 Quaternion rotation = new Quaternion();
@@ -45,12 +45,14 @@ public class TargetingSystem : MonoBehaviour
                 CreateTargets(horizontal, vertical);                
                 return;
             }
-            if (vertical != 0)
+            if ((int)Input.GetAxisRaw("Vertical") != 0)
             {
+                vertical = (int)Input.GetAxisRaw("Vertical");
+                horizontal = 0;
                 CreateTargets(horizontal, vertical);
                 return;
             }
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetButtonDown("Fire1"))
             {
                 HideTargeting();                
                 aoe.UseAbility();
@@ -103,6 +105,10 @@ public class TargetingSystem : MonoBehaviour
                 target.AddComponent<BoxCollider2D>();
                 targets.Add(target);
             }
+        if (aoe.rotates)
+        {            
+            aoe.rotation.eulerAngles = new Vector3(0, (90 - 90 * horizontal) * (-horizontal), 90 * vertical);
+        }
         aoe.startPosition = new Vector3(horizontal * aoe.offset, vertical * aoe.offset, 0) + transform.position;
     }
 

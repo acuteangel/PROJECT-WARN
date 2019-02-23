@@ -5,8 +5,8 @@ using UnityEngine;
 public class CharacterStats : MonoBehaviour
 {
 
-    public int currentHealth { get; private set; }
-    public int currentMana { get; private set; }
+    public int currentHealth;
+    public int currentMana;
     
     public Stat damage;
     public Stat armor;
@@ -21,7 +21,7 @@ public class CharacterStats : MonoBehaviour
         currentMana = maxMana.GetValue();
     }
 
-    public void AddBuff(Buff buff)
+    public virtual void AddBuff(Buff buff)
     {
         armor.AddModifier(buff.armorModifier);
         damage.AddModifier(buff.damageModifier);
@@ -51,7 +51,7 @@ public class CharacterStats : MonoBehaviour
         buffs = copy;
     }
 
-    private void RemoveBuff(Buff buff)
+    protected virtual void RemoveBuff(Buff buff)
     {
         armor.RemoveModifier(buff.armorModifier);
         damage.RemoveModifier(buff.damageModifier);
@@ -69,7 +69,7 @@ public class CharacterStats : MonoBehaviour
         buffs = new List<TimedBuff>();
     }
 
-    protected void CompareHPMP()
+    protected virtual void CompareHPMP()
     {
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth.GetValue());
         currentMana = Mathf.Clamp(currentMana, 0, maxMana.GetValue());
@@ -90,6 +90,7 @@ public class CharacterStats : MonoBehaviour
         if (currentMana >= cost)
         {
             currentMana -= cost;
+            CanvasListener.instance.UpdateManaBar();
             return true;
         }
         return false;
@@ -121,6 +122,7 @@ public class CharacterStats : MonoBehaviour
                 }
                 currentMana += amt;
                 CompareHPMP();
+                CanvasListener.instance.UpdateManaBar();
                 break;
         }
     }

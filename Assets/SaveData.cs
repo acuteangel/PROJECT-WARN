@@ -9,7 +9,10 @@ public class SaveData : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(this);
     }
 
     #endregion
@@ -21,6 +24,8 @@ public class SaveData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stats = GetComponent<PlayerStats>();
+
         int index = PlayerPrefs.GetInt("CharacterSelected");
         choice = characterChoices[index];
         ItemDrop primary = Instantiate(choice.equip, new Vector3(1, 0, 0), new Quaternion()).GetComponent<ItemDrop>();
@@ -36,17 +41,30 @@ public class SaveData : MonoBehaviour
     }
 
     public void SaveCharacter()
-    {
-        stats = FindObjectOfType<Player>().GetComponent<PlayerStats>();
-        stats.RemoveAllBuffs();
+    {        
+        PlayerStats playerStats = FindObjectOfType<Player>().GetComponent<PlayerStats>();        
+        playerStats.RemoveAllBuffs();
+        stats.currency = playerStats.currency;
+        stats.damage = playerStats.damage;
+        stats.armor = playerStats.armor;
+        stats.maxHealth = playerStats.maxHealth;
+        stats.currentHealth = playerStats.currentHealth;
+        stats.maxMana = playerStats.maxMana;
+        stats.currentMana = playerStats.currentMana;
     }
 
     public void LoadCharacter()
     {
         Debug.Log("hi");
         GameObject player = FindObjectOfType<Player>().gameObject;
-        CharacterStats characterStats = player.GetComponent<CharacterStats>();
-        characterStats = stats;
+        PlayerStats characterStats = player.GetComponent<PlayerStats>();
+        characterStats.currency = stats.currency;
+        characterStats.damage = stats.damage;
+        characterStats.armor = stats.armor;
+        characterStats.maxHealth = stats.maxHealth;
+        characterStats.currentHealth = stats.currentHealth;
+        characterStats.maxMana = stats.maxMana;
+        characterStats.currentMana = stats.currentMana;
         FindObjectOfType<CameraControl>().GetComponent<CameraControl>().player = player;
     }
 

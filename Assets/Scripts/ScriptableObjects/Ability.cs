@@ -7,6 +7,7 @@ public abstract class Ability : ScriptableObject
 
     public string aName = "New Ability";
     public string trigger = "Trigger";
+    public int cost = 0;
     [HideInInspector] public Quaternion rotation = new Quaternion();
     [HideInInspector] public MovingObject caster;
     [HideInInspector] public MovingObject target;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f5e88ac32d85640ad24bfd1941d0c6, type: 3}
   m_Name: White Necklace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 1bc2442150b7aba4eb413d7221b094b6, type: 3}
+  sprite: {fileID: 21300000, guid: 2f2e357dd42edcb40aa7f5b587dc32ca, type: 3}
   aName: White Necklace
   armorModifier: 10
   damageModifier: 10

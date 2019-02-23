@@ -20,8 +20,13 @@ public class Buff : Ability
 
     public override void UseAbility()
     {
-        CharacterStats stats = target.GetComponent<CharacterStats>();
-        stats.AddBuff(this);
-        base.UseAbility();
+        if (FindObjectOfType<Player>().GetComponent<PlayerStats>().LoseMana(cost))
+        {
+            CharacterStats stats = target.GetComponent<CharacterStats>();
+            stats.AddBuff(this);
+            base.UseAbility();
+        }
+        else
+            Debug.Log("oom");
     }
 }

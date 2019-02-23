@@ -16,16 +16,21 @@ public class Player : MovingObject
     {        
         //Get a component reference to the Player's animator component
         animator = GetComponent<Animator>();
-
-        //Get the current health point total stored in GameManager.instance between levels.
-        //health = GameManager.instance.playerHealthPoints;
-
+        
         //Call the Start function of the MovingObject base class.
         base.Start();
-        
+
+        if (GameManager.instance.level > 1)
+        {
+            SaveData.instance.LoadCharacter();
+        }
+
         CanvasListener.instance.healthBar.maxValue = stats.maxHealth.GetValue();
-        CanvasListener.instance.healthBar.value = stats.maxHealth.GetValue();
+        CanvasListener.instance.healthBar.value = stats.currentHealth;
         CanvasListener.instance.player = this;
+        CanvasListener.instance.manaBar.maxValue = stats.maxMana.GetValue();
+        CanvasListener.instance.manaBar.value = stats.currentMana;
+
     }
     
 
@@ -204,6 +209,9 @@ public class Player : MovingObject
     private void CheckIfGameOver()
     {
         if (stats.currentHealth <= 0)
-            GameManager.instance.GameOver();
+        {
+            animator.SetTrigger("playerHit");
+            GameManager.instance.Invoke("GameOver", 2f);
+        }
     }
 }

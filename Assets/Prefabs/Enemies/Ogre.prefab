@@ -162,15 +162,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42fd1bcf47aec5f4a86b4fd981d1ebc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0.1
   blockingLayer:
     serializedVersion: 2
     m_Bits: 256
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 7f6a734eeb81ebb43bc08cd47e115d5c, type: 2}
   boxCollider: {fileID: 0}
   playerDamage: 90
-  abilityWindup: {fileID: 0}
-  hp: 550
+  abilityWindup: {fileID: 11400000, guid: 194ed2c2da552904eaa3e655d8297629, type: 2}
 --- !u!114 &8089009637143766803
 MonoBehaviour:
   m_ObjectHideFlags: 0

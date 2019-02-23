@@ -14,13 +14,16 @@ public class AOEAttack : Ability
     public override void UseAbility()
     {
         GameManager.instance.doingAnimation = true;
-        Transform prefab = Instantiate(GameManager.instance.spellCast, startPosition, new Quaternion());
+        Transform prefab = Instantiate(GameManager.instance.spellCast, startPosition, rotation);
         GameManager.instance.playersTurn = false;
         prefab.gameObject.GetComponent<Animator>().SetTrigger(trigger);
     }
 
     public override void OnClick()
     {
-        FindObjectOfType<TargetingSystem>().EnterTargeting(this);
+        if (FindObjectOfType<Player>().GetComponent<PlayerStats>().LoseMana(cost))
+            FindObjectOfType<TargetingSystem>().EnterTargeting(this);
+        else
+            Debug.Log("oom");
     }
 }

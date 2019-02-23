@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Spike Damage
   m_EditorClassIdentifier: 
   aName: Spike Reaction
-  amount: -100
+  amount: -50
   stat: 0
-  percentage: 0
+  percentage: 1

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aName: Frost 1
   trigger: Frost1
+  cost: 0
   rotation: {x: 0, y: 0, z: 0, w: 0}
   caster: {fileID: 0}
   target: {fileID: 0}
   rotates: 0
   fromCaster: 0
-  damage: 1
+  damage: 100
   range: 2

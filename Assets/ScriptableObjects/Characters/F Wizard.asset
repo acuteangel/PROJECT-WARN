@@ -16,7 +16,7 @@ MonoBehaviour:
     type: 3}
   name: 
   abilities:
-  - {fileID: 11400000, guid: a271323ca77b5b7458539e8341e39cea, type: 2}
+  - {fileID: 11400000, guid: 0387077ef2ceffc4197bf46e49888391, type: 2}
   - {fileID: 11400000, guid: 6e3e0e1fd576882409fb66393055bdde, type: 2}
   primaryWeapon: {fileID: 11400000, guid: 8dc40e18a95e67b4b8a15559a47bf27c, type: 2}
   secondaryWeapon: {fileID: 11400000, guid: 88c873fade5f9a647ba4229196aa94c4, type: 2}

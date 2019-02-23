@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aName: Focus
   trigger: Shine
+  cost: 100
   rotation: {x: 0, y: 0, z: 0, w: 0}
   caster: {fileID: 0}
   target: {fileID: 0}

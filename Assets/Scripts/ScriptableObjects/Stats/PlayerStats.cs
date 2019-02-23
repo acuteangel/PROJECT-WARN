@@ -27,9 +27,35 @@ public class PlayerStats : CharacterStats
         {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
-            maxHealth.AddModifier(newItem.healthModifier);
-            maxMana.AddModifier(newItem.manaModifier);
+            maxHealth.RemoveModifier(newItem.healthModifier);
+            maxMana.RemoveModifier(newItem.manaModifier);
             CompareHPMP();
         }
+        UpdateStatsUI();
+    }
+
+    public override void AddBuff(Buff buff)
+    {
+        base.AddBuff(buff);
+        UpdateStatsUI();
+    }
+
+    protected override void RemoveBuff(Buff buff)
+    {
+        base.RemoveBuff(buff);
+        UpdateStatsUI();
+    }
+
+    protected override void CompareHPMP()
+    {
+        base.CompareHPMP();
+        CanvasListener.instance.UpdateHealthBar();
+        CanvasListener.instance.UpdateManaBar();
+    }   
+
+    private void UpdateStatsUI()
+    {
+        CanvasListener.instance.armor.text = armor.GetValue().ToString();
+        CanvasListener.instance.damage.text = damage.GetValue().ToString();        
     }
 }

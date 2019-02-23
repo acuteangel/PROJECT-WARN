@@ -22,6 +22,8 @@ public class CanvasListener : MonoBehaviour
 
     public GameObject pauseMenu;
 
+    public GameObject menuPanel;
+
     public GameObject movesMenu;
 
     public bool subMenu = false;
@@ -31,6 +33,13 @@ public class CanvasListener : MonoBehaviour
     public Button [] buttons;
     
     public Slider healthBar;
+    public Slider manaBar;
+    public Text HP;
+    public Text MP;
+    public Text armor;
+    public Text damage;
+    public Text level;
+    public Text currency;
 
     [HideInInspector]public Player player;
 
@@ -43,9 +52,9 @@ public class CanvasListener : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        if (Input.GetButtonDown("Cancel")) {
             if (GameManager.instance.playerTargeting)
-            {
+            {                
                 GameManager.instance.playerTargeting = false;
                 TargetingSystem.instance.ExitTargeting();
                 movesMenu.SetActive(true);
@@ -55,7 +64,12 @@ public class CanvasListener : MonoBehaviour
             }
             if (subMenu)
             {
-                
+                menuPanel.SetActive(true);
+                movesMenu.SetActive(false);
+                itemsMenu.SetActive(false);
+                subMenu = false;
+                FindObjectOfType<EventSystem>().SetSelectedGameObject(menuPanel.GetComponentInChildren<Button>().gameObject);
+                return;
             }
 
             if (!GameManager.instance.isPaused) 
@@ -73,8 +87,9 @@ public class CanvasListener : MonoBehaviour
     {
         GameManager.instance.isPaused = true;
         pauseMenu.SetActive(true);
+        FindObjectOfType<EventSystem>().SetSelectedGameObject(menuPanel.GetComponentInChildren<Button>().gameObject);
         // Time.timeScale = 0f;
-        
+
     }
 
 
@@ -85,12 +100,22 @@ public class CanvasListener : MonoBehaviour
         // Time.timeScale = 1f;
     }
 
-    
+    public void OpenMovesMenu()
+    {
+        FindObjectOfType<EventSystem>().SetSelectedGameObject(movesMenu.GetComponentInChildren<Button>().gameObject);
+        subMenu = true;
+    }
 
     public void UpdateHealthBar()
     {
-        Debug.Log(player.name);
-        healthBar.value = player.stats.currentHealth;        
+        healthBar.value = player.stats.currentHealth;
+        HP.text = player.stats.currentHealth + " / " + player.stats.maxHealth.GetValue();
+    }
+
+    public void UpdateManaBar()
+    {
+        manaBar.value = player.stats.currentMana;
+        MP.text = player.stats.currentMana + " / " + player.stats.maxMana.GetValue();
     }
 }
 

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aName: Slash
   trigger: Slash
-  spellCaster: {fileID: 906, guid: 4ebb5802685b0bb418e6f7d3b2dc304c, type: 3}
-  rotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
+  cost: 0
+  rotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   caster: {fileID: 0}
   target: {fileID: 0}
   rotates: 1
   fromCaster: 0
-  damage: 1
+  damage: 100
   range: 1

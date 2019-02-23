@@ -36,8 +36,6 @@ public class EquipmentManager : MonoBehaviour
         int slotIndex = (int)newItem.slot;
 
         Equipment oldItem = null;
-        Debug.Log(equipment.Length);
-        Debug.Log(slotIndex);
         if (equipment[slotIndex] != null)
         {            
             oldItem = equipment[slotIndex];

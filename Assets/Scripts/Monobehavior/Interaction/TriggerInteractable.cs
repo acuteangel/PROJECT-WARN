@@ -17,8 +17,11 @@ public class TriggerInteractable : Interactable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        character = collision.gameObject.GetComponent<MovingObject>();
-        if (!playerOnly || collision.gameObject.GetComponent<Player>() != null)
-            Interact();
+        if (collision.gameObject.GetComponent<MovingObject>() != null)
+        {
+            character = collision.gameObject.GetComponent<MovingObject>();
+            if (!playerOnly || collision.gameObject.GetComponent<Player>() != null)
+                Interact();
+        }
     }
 }
