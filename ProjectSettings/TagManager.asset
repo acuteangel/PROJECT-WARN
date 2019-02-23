@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Big Boss
   - Normal Enemy
+  - Chest
+  - Collectable
+  - Pointer
+  - Target
+  - Wall
+  - Rooms
+  - SpawnPoint
+  - Exit
   layers:
   - Default
   - TransparentFX
@@ -16,7 +24,7 @@ TagManager:
   - 
   - 
   - Blocking
-  - 
+  - Trigger
   - 
   - 
   - 
@@ -40,9 +48,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Below Ground
+    uniqueID: 1446144929
+    locked: 0
+  - name: Ground
+    uniqueID: 1898194231
+    locked: 0
+  - name: Spikes
+    uniqueID: 1020462269
+    locked: 0
+  - name: Switches
+    uniqueID: 493597549
+    locked: 0
+  - name: Wall
+    uniqueID: 377902257
+    locked: 0
+  - name: Wall Objects
+    uniqueID: 2105872333
+    locked: 0
+  - name: Items
+    uniqueID: 1975242777
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Units
-    uniqueID: 3097611893
+  - name: Abilities
+    uniqueID: 1487682707
+    locked: 0
+  - name: Wall Tops
+    uniqueID: 681833805
+    locked: 0
+  - name: Pillar & Fountain Tops
+    uniqueID: 1890069599
     locked: 0

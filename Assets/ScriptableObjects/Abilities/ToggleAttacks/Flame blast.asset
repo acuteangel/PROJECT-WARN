@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356f28b2d2a23a74a993ab9678340c56, type: 3}
+  m_Name: Flame blast
+  m_EditorClassIdentifier: 
+  aName: Flame blast
+  trigger: Firespin
+  cost: 100
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  caster: {fileID: 0}
+  target: {fileID: 0}
+  rotates: 0
+  fromCaster: 0
+  damage: 200
+  range: 3
+  baseAttack: {fileID: 11400000, guid: 57a985b6a4665b646937c33c82acc6a4, type: 2}

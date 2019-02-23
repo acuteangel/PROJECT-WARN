@@ -4,7 +4,8 @@
 AnimatorOverrideController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M Wizard
   m_Controller: {fileID: 9100000, guid: 243e26f57b24a6042844bbe883d7d7b4, type: 2}
   m_Clips:
