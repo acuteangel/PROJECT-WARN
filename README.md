@@ -1,6 +1,6 @@
 # PROJECT-WARN
 
-Project WARN is a turn-based mystery dungeon adventure game. It was created with the Unity engine and C#. Our game is connected to a Mongo database, allowing for a submission of your end score. These scores are hosted on our companion web app.
+Project WARN is a turn-based mystery dungeon adventure game. It was created with the Unity engine and C#. Our game is connected to a Mongo database, allowing for a submission of your end score. These scores are hosted on our companion web app, which can be found at https://project-warn.herokuapp.com.
 
 ## Download
 
