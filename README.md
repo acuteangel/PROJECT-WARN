@@ -8,7 +8,7 @@ Builds for our game can be found at the links below.
 
 Download for Windows: https://drive.google.com/file/d/1TaP4mfO1JZXkcTVOkyUsh4uvJmdp5ZUg/view?usp=sharing
 
-Download for Mac: https://drive.google.com/file/d/192Hl3k00YtfjPej9y1jNNb31UxjFJvFq/view?usp=sharing
+Download for Mac: https://drive.google.com/file/d/1EL1IYa9_6tTY4xkxwH-usGZvaoQgBsjo/view?usp=sharing
 
 ## System Requirements
 
