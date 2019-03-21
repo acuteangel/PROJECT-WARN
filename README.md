@@ -6,9 +6,9 @@ Project WARN is a turn-based mystery dungeon adventure game. It was created with
 
 Builds for our game can be found at the links below.
 
-Download for Windows: https://drive.google.com/file/d/1TaP4mfO1JZXkcTVOkyUsh4uvJmdp5ZUg/view?usp=sharing
+Download for Windows: https://drive.google.com/open?id=14bV3cdKLvRWGYLrDQ82qya2XJ0WepV61
 
-Download for Mac: https://drive.google.com/file/d/1EL1IYa9_6tTY4xkxwH-usGZvaoQgBsjo/view?usp=sharing
+Download for Mac: https://drive.google.com/open?id=1UZpXTIlWJB05xtNnfNPS6QTQYBBRfhwW
 
 ## System Requirements
 
